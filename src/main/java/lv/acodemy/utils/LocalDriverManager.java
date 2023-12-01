@@ -42,13 +42,14 @@ public class LocalDriverManager {
         browserOptions.setPlatformName("Windows 11");
         browserOptions.setBrowserVersion("latest");
         Map<String, Object> sauceOptions = new HashMap<>();
-        sauceOptions.put("username", "oauth-nikita-367ce");
-        sauceOptions.put("accessKey", "25505575-ff6d-498b-8266-4c49e9e1e87a");
+        sauceOptions.put("username", "oauth-irada.rzaeva.98-34539");
+        sauceOptions.put("accessKey", "673eae92-28bc-4f18-a206-b1497f4b19a5");
         sauceOptions.put("build", "<your build id>");
         sauceOptions.put("name", "<your test name>");
         browserOptions.setCapability("sauce:options", sauceOptions);
 
-        URL url = new URL("https://ondemand.eu-central-1.saucelabs.com:443/wd/hub");
+        URL url = new URL("https://ondemand.us-west-1.saucelabs.com:443/wd/hub");
         return new RemoteWebDriver(url, browserOptions);
+
     }
 }
